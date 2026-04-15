@@ -1,4 +1,7 @@
 /**
+ * Name: Damion Sklenars-Clare
+ * Student ID: 1638052
+ * Last modified: 16/04/2026
  * MinHeap is a class that implements a minimum heap with an array of Strings
  */
 public class MinHeap {

@@ -1,6 +1,9 @@
 import java.io.*;
 
 /**
+ * Name: Damion Sklenars-Clare
+ * Student ID: 1638052
+ * Last modified: 16/04/2026
  * reads one character at a time until it reaches the end of a line
  */
 public class LineReader {

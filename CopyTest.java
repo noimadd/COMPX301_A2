@@ -1,6 +1,9 @@
 import java.io.*;
 
 /**
+ * Name: Damion Sklenars-Clare
+ * Student ID: 1638052
+ * Last modified: 15/04/2026
  * test program that uses the LineReader class and prints them to an output file
  */
 public class CopyTest {
