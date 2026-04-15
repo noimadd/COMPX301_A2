@@ -17,7 +17,7 @@ public class LineReader {
      * reads a single line from the input
      * @return the line read, or null if the end of the stream is reached
      */
-    public String ReadLine() throws IOException {
+    public String readLine() throws IOException {
         StringBuilder line = new StringBuilder();
         int c;
 

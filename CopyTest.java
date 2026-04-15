@@ -8,7 +8,7 @@ public class CopyTest {
         LineReader reader = new LineReader(System.in);
         String line;
 
-        while ((line = reader.ReadLine()) != null) {
+        while ((line = reader.readLine()) != null) {
             System.out.print(line);
         }
     }

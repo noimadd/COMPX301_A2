@@ -30,6 +30,11 @@ public class MinHeap {
     private String getMin() { return minHeap[0]; }
 
     /**
+    * returns the current size of the heap
+    */
+    public int getSize() { return size; }
+
+    /**
      * inserts a value into the min heap
      */
     public void insert(String val) {
