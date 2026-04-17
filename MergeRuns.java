@@ -16,6 +16,7 @@ public class MergeRuns {
         if (args.length > 0 && args[0].startsWith("-k")) {
             try {
                 K = Integer.parseInt(args[0].substring(2));
+                if (K < 2 || K > 16) K = 2; // default to 2 if out of range
             } catch (NumberFormatException e) {
                 K = 2; 
             }
