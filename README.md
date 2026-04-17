@@ -18,3 +18,8 @@
 3. java MergeRuns -kK > final.txt
 - K should be replaced with how many splits you want, although does nothing right now
 - Only distribution works currently with init.runs databeing split into 2 separate files
+
+## Repository
+https://github.com/noimadd/compx301_A2
+
+Included to demonstrate iterative development

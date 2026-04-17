@@ -3,7 +3,7 @@ import java.io.*;
 /**
  * Name: Damion Sklenars-Clare
  * Student ID: 1638052
- * Last modified: 16/04/2026
+ * Last modified: 17/04/2026
  * MakeRuns.java Sorts runs from a textfile a sorts them using a min-heap Sorted
  * runs are exported to a new text file
  */
@@ -36,20 +36,22 @@ public class MakeRuns {
         MinHeap heap = new MinHeap(H); // new min-heap object with size = H
 
         String line; // current line
-        // while available lines and heap is not full insert a new line
-        while ((line = reader.readLine()) != null && !heap.isFull()) heap.insert(line);
-
-        // while heap is not empty, min value is removed, printed and a new line is inserted
-        while (!heap.isEmpty()) {
-            int size = heap.getSize(); // gets the current size of the heap
-            for (int i = 0; i < size; i++) {
-                System.out.print(heap.removeMin());
-
-                line = reader.readLine();
-                if (line != null) heap.insert(line);
+        // processes input at size H until the end of the file
+        while (true) {
+            // fills heap up to H elements
+            while (!heap.isFull() && (line = reader.readLine()) != null) { heap.insert(line); }
+            
+            if (heap.isEmpty()) break;
+            
+            // removes all elements from the heap
+            // creates a sorted run
+            while (!heap.isEmpty()) { System.out.print(heap.removeMin()); }
+            
+            line = reader.readLine();
+            if (line != null) {
+                System.out.print(END_OF_RUN + "\n");
+                heap.insert(line);
             }
-
-            if (!heap.isEmpty()) System.out.print(END_OF_RUN + "\n"); // prints the end of run marker
         }
     }
 }
