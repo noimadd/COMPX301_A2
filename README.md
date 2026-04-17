@@ -11,5 +11,10 @@
 3. diff MobyDick.txt copy.txt
 
 ### MakeRuns Usage
-2. cat <inputfile>.txt | java MakeRuns -hH > <outputfile>.txt
+2. cat <inputfile>.txt | java MakeRuns -hH > init.runs
 - H should be replaced with how ever large you would like the Heap to be
+
+### MergeRuns Usage
+3. java MergeRuns -kK > final.txt
+- K should be replaced with how many splits you want, although does nothing right now
+- Only distribution works currently with init.runs databeing split into 2 separate files
